@@ -1,6 +1,7 @@
 import './landingpage.css';
-import goombaImg from '../../assets/goomba.png';
 import pipeImg from '../../assets/pipe.png';
+import pikachuImg from '../../assets/pikachu.png';
+import squirtleImg from '../../assets/squid.png';
 import { useEffect, useRef } from 'react';
 
 function LandingPage() {
@@ -16,7 +17,7 @@ function LandingPage() {
 		if (!canvas) return;
 
 		// Load Unity Build
-		const buildUrl = '/Build';
+		const buildUrl = `Build`;
 		const loaderUrl = buildUrl + '/Build.loader.js';
 		const config = {
 			arguments: [],
@@ -69,7 +70,6 @@ function LandingPage() {
 
 	return (
 		<div className='landing-page'>
-			<h1 className='landing-page__title'>Super Jespermon</h1>
 			<div
 				className='landing-page__game-container'
 				style={{ position: 'relative' }}>
@@ -83,24 +83,14 @@ function LandingPage() {
 			</div>
 			<footer className='landing-page__footer'>
 				<img
-					className='landing-page__footer--pipe'
-					src={pipeImg}
-					alt='pipe'
-				/>
-				<img
 					className='landing-page__footer--goomba'
-					src={goombaImg}
+					src={squirtleImg}
 					alt='goomba'
 				/>
 				<img
 					className='landing-page__footer--goomba'
-					src={goombaImg}
-					alt='goomba'
-				/>
-				<img
-					className='landing-page__footer--pipe'
-					src={pipeImg}
-					alt='pipe'
+					src={pikachuImg}
+					alt='pikachu'
 				/>
 			</footer>
 		</div>
