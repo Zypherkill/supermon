@@ -88,6 +88,11 @@ function LandingPage() {
 					alt='goomba'
 				/>
 				<img
+    				className="landing-page__footer--pipe"
+    				src={pipeImg}
+    				alt="Pipe"
+  				/>
+				<img
 					className='landing-page__footer--goomba'
 					src={pikachuImg}
 					alt='pikachu'
