@@ -50,9 +50,9 @@ body {
 }
 
 .landing-page__canvas {
-  width: min(78vw, 900px);
+  width: min(78vw, 930px);
   max-height: 90vh;
-  height: 80vh;
+  height: auto;
   aspect-ratio: 16 / 10;
   background: #050316;
   border: 2px solid rgba(255, 255, 255, 0.08);
